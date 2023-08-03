@@ -5,19 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <script src="https://kit.fontawesome.com/12cfa93675.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header bg-gurey h-[5rem] w-full items-center overflow-hidden">
         <div class="container">
-            <div class="header__wrapper flex flex-row gap-[10rem] items-center">
+            <div class="header__wrapper flex flex-row justify-between items-center">
                 <div class="header__title flex gap-[1rem]">
                     <img src="./img/logo.png" alt="" class="w-[2rem]">
                     <h1 class="flex text-light text-[1.5rem]">Visual Studio Code</h1>
+                    <ul class="hidden items-center text-grey gap-[1rem] text-[1rem] font-medium lg:flex">
+                        <li><a href="">Docs</a></li>
+                        <li><a href="">Updates</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">API</a></li>
+                        <li><a href="">Extensions</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Learn</a></li>
+                    </ul>
+                    <ul class="hidden items-center ml-[30rem] lg:flex">
+                        <li class="text-grey bg-gray p-[.5rem]"><a href=""><i class="fa-solid fa-magnifying-glass"></i> Search Docs</a></li>
+                        <li class="text-light bg-asul p-[.5rem]"><a href=""></a><i class="fa-solid fa-download"></i> Download</li>
+                    </ul>
                 </div>
-                <div class="borger flex flex-col gap-[.3rem] items-center">
+                <div class="borger flex flex-col gap-[.3rem] items-center hover:bg-asul p-[.5rem] rounded-md ease duration-[.5s]">
                     <span class="w-[2rem] h-[.2rem] bg-light block rounded-[1rem] "></span>
                     <span class="w-[2rem] h-[.2rem] bg-light block rounded-[1rem] "></span>
                     <span class="w-[2rem] h-[.2rem] bg-light block rounded-[1rem] "></span>
+                </div>
+                <div class="drop absolute top-20 left-0 w-[100%] h-0 overflow-hidden ease duration-[.5s]">
+                    <ul class="bg-gurey text-[1.25rem]">
+                        <li class="text-light p-[.5rem]"><a href="">Docs</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">Updates</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">Blog</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">API</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">Extensions</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">FAQ</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">Learn</a></li>
+                        <li class="text-light p-[.5rem]"><a href="">Search</a></li>
+                        <li class="text-light bg-asul p-[.5rem]"><a href=""><i class="fa-solid fa-download"></i> Download</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

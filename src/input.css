@@ -3,7 +3,19 @@
 @tailwind utilities;
 
 .container{
-    max-width: 130rem;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 1.5rem;
+}
+
+@layer components{
+    .header{
+        
+    }
+    .header .borger{
+        @apply lg:hidden
+    }
+    .header .drop{
+        @apply lg:hidden
+    }
 }
